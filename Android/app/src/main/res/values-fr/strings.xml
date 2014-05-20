@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="labelHard">Questions difficiles :</string>
+    <string name="buttonAnswer">Réponse</string>
+    <string name="labelDifficulty">Difficile :</string>
+    <string name="labelNbDisplays">Nb affichages :</string>
+    <string name="buttonPrevious">&lt;&lt;</string>
+    <string name="buttonNext">&gt;&gt;</string>
+    <string name="emptyString"/>
+    <string name="zeroString">0</string>
+    <string name="yes">oui</string>
+    <string name="no">non</string>
+    <string name="q1">1+1</string>
+    <string name="r1">2</string>
+    <string name="q2">7*2</string>
+    <string name="r2">14</string>
+    <string name="q3">47 est-il premier</string>
+    <string name="r3">oui</string>
+    <string name="q4">Prenom du capitaine Haddock</string>
+    <string name="r4">Archibald</string>
+</resources>

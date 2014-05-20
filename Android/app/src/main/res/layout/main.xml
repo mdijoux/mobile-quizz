@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/labelHard" />
+
+    <ToggleButton
+        android:id="@+id/toggleButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/textView1"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="5dp"
+        android:checked="true"
+        android:onClick="toggleDifficulte"/>
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="@string/buttonAnswer"
+        android:onClick="printReponse"/>
+
+    <TextView
+        android:id="@+id/labelEnonce"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/button1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:text="@string/emptyString" />
+
+    <TextView
+        android:id="@+id/labelReponse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:text="@string/emptyString" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:onClick="previousQuestion"
+        android:text="@string/buttonPrevious" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:onClick="nextQuestion"
+        android:text="@string/buttonNext" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button2"
+        android:layout_marginBottom="20dp"
+        android:text="@string/labelNbDisplays" />
+
+    <TextView
+        android:id="@+id/labelNbAffichages"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/textView2"
+        android:layout_alignBottom="@id/textView2"
+        android:layout_toRightOf="@id/textView2"
+        android:layout_marginLeft="5dp"
+        android:text="@string/zeroString" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="@string/labelDifficulty"
+        android:layout_above="@id/textView2"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="5dp" />
+
+    <TextView
+        android:id="@+id/labelDifficulte"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/textView3"
+        android:layout_alignBottom="@id/textView3"
+        android:layout_toRightOf="@id/textView3"
+        android:layout_marginLeft="5dp"
+        android:text="@string/emptyString" />
+
+</RelativeLayout>
